@@ -40,7 +40,8 @@ class HomeScreen extends StatelessWidget {
 
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.red,
+                        image: DecorationImage(image: AssetImage("assets/images/logo.jpg"))
+                        // color: Colors.red,
                       ),
                     )
                   ],
