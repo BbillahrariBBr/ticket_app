@@ -11,8 +11,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // column, row
     return Scaffold(
+      backgroundColor: AppStyles.bgColor,
       body: ListView(
         children: [
+          SizedBox(height: 40,),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
@@ -39,29 +41,32 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       width: 50,
                       height: 50,
-
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(image: AssetImage(AppMedia.logo))
-                        // color: Colors.red,
-                      ),
+                          borderRadius: BorderRadius.circular(10),
+                          image:
+                              DecorationImage(image: AssetImage(AppMedia.logo))
+                          // color: Colors.red,
+                          ),
                     )
                   ],
                 ),
-                SizedBox(height: 25,),
-
+                SizedBox(
+                  height: 25,
+                ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      
-                     color: Color(0xffE2DFD2),
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color(0xffF4F6Fd),
+                    // color: Color(0xffE2DFD2),
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(FluentSystemIcons.ic_fluent_search_regular, color: Color(0xFFBFC205)),
-                      Text("Search Icon")],
+                      Icon(FluentSystemIcons.ic_fluent_search_regular,
+                          color: Color(0xFFBFC205)),
+                      Text("Search")
+                    ],
                   ),
                 )
               ],
